@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team Builder</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="panel">
+                <h1>Team Builder<span class='icon'></span></h1>
+            </header>
+            <main>
+                <div class="team-builder panel">
+                    <div class="player-insert">
+                        <input type="text" placeholder="Nome" class="input" maxlength="24" id="player-name">
+                        <select id="player-skill" class="input">
+                            <option value="skill">Skill</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <button type="submit" id="submit-button" onclick="submit_player()">Aggiungi</button>
+                    </div>
+                    <div class="grid-container" id="player-grid">
+                        <div class="grid-header">Nome</div>
+                        <div class="grid-header skill-item">Skill</div>
+                        <!--
+                        <div class="grid-item">Farfai<span>&#10005</span></div>
+                        <div class="grid-item skill-item">8</div>
+
+                        <div class="grid-item">Yamal<span>&#10005</span></div>
+                        <div class="grid-item skill-item">10</div>
+                        -->
+                    </div>
+                </div>
+                    <button  class='sort-teams-button' id="sort-teams-button" onclick='generate_teams()'>Crea Squadre</button>
+                <div class="panel hidden" id="teams-panel">
+                    <div class="team panel" id="team-1">
+                        team2
+                    </div>
+                    <div class="team panel" id="team-2">
+                        team1
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
