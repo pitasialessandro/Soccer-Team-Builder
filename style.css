@@ -150,3 +150,18 @@ select:focus {
 .visible {
     display: block;
 }
+
+@media (max-width: 600px) {
+    .player-insert {
+        flex-direction: column;
+    }
+
+    .player-insert .input, .player-insert button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .player-insert button {
+        margin-bottom: 0;
+    }
+}
