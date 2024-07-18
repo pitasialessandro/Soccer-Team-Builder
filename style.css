@@ -23,11 +23,12 @@ body {
     margin: 0 auto;
     max-width: 540px;
     min-width: min-content;
+    padding: 0 10px;
 }
 .panel {
     background-color: #088395;
     border-radius: 12px;
-    padding: 3%;
+    padding: 20px;
     margin: 20px;
     color: white;
 }
@@ -136,10 +137,9 @@ select:focus {
     cursor: pointer;
 }
 .sort-teams-button {
+    width: 100%; /* Make the button full width */
     font-size: 22px;
     padding: 20px;
-    margin: 0px 20px 0;
-    width: 92.5%;
     background-color: #088395;
     opacity: 1;
 }
@@ -149,7 +149,7 @@ select:focus {
 .visible {
     display: block;
 }
-
+/*
 @media (max-width: 600px) {
     .player-insert {
         flex-direction: column;
@@ -163,4 +163,10 @@ select:focus {
     .player-insert button {
         margin-bottom: 0;
     }
+}
+*/
+.button-container {
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 0 20px;
 }
