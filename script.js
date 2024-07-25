@@ -36,8 +36,6 @@ function submit_player() {
         //saveData();
     }
 }
-// i dont have an efficient way (O(1)) to delete the players but nvm it should host max 22 players
-// which will be still ok with a linear search through the array to find the player to delete
 
 // inserting new players with O(n) time, can be optimized with binary search 
 function linear_search(player) {
